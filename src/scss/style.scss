@@ -1,0 +1,41 @@
+@import "nullstyle";
+@import "fonts";
+@import "header";
+
+html,
+body {
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.menu {
+  &__vertical {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__counters {
+    margin-top: 10px;
+  }
+}
+
+@import "footer";
